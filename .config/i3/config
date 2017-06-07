@@ -58,10 +58,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+backslash split h
+#bindsym $mod+backslash split h
 
 # split in vertical orientation
-bindsym $mod+minus split v
+#bindsym $mod+minus split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -78,7 +78,7 @@ bindsym $mod+space floating toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-bindsym $mod+z focus child
+#bindsym $mod+d focus child
 
 # set workplace window icons
 set $workspace1 "1:  "
@@ -117,14 +117,14 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace0
 
 # workspace assignments
-assign [class="^chromium"]                      $workspace1
-assign [class="^Firefox"]                       $workspace2
-assign [class="^Thunderbird"]                   $workplace3
-assign [class="^Nautilus"]                      $workspace4
-assign [class="^calibre"]                       $workspace7
-assign [class="^gimp"]                          $workspace8
-assign [class="^gvim"]                          $workspace9
-assign [class="^termite" instance="^tmux"]      $workspace0
+# assign [class="^chromium"]                      $workspace1
+# assign [class="^Firefox"]                       $workspace2
+# assign [class="^Thunderbird"]                   $workplace3
+# assign [class="^Nautilus"]                      $workspace4
+# assign [class="^calibre"]                       $workspace7
+# assign [class="^gimp"]                          $workspace8
+# assign [class="^gvim"]                          $workspace9
+# assign [class="^termite" instance="^tmux"]      $workspace0
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -181,14 +181,10 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 hide_edge_borders both
 
 # Workspace screens
-workspace $workspace1 output LVDS-1
-workspace $workspace0 output VGA-1
-
-# Enable floating mode
-for_window [class="chromium"] floating enable
-for_window [class="gimp"] floating enable
+# workspace $workspace1 output LVDS-1
+# workspace $workspace0 output VGA-1
 
 # Initial applications
 exec "nm-applet"
 exec "ibus-daemon -r"
-exec --no-startup-id i3-msg 'workspace $workspace0; exec termite; workspace $workspace1'
+# exec --no-startup-id i3-msg 'workspace $workspace0; exec termite; workspace $workspace1'
