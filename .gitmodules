@@ -1,12 +1,12 @@
 [submodule ".vim/autoload/pathogen.vim"]
     path = .vim/autoload/pathogen.vim
     url = https://github.com/tpope/pathogen.vim.git
-[submodule ".vim/bundle/ctrlp"]
-    path = .vim/bundle/ctrlp
+[submodule ".vim/bundle/ctrlp.vim"]
+    path = .vim/bundle/ctrlp.vim
     url = https://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/jshint"]
     path = .vim/bundle/jshint
-    url = https://github.com/jshint/jshint.git
+    url = https://github.com/Shutnik/jshint.git
 [submodule ".vim/bundle/nerdtree"]
     path = .vim/bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
@@ -23,7 +23,7 @@
     path = .vim/bundle/vim-airline-themes
     url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule ".vim/bundle/vim-gitgutter"]
-    path = .vim/bundle/git-gutter
+    path = .vim/bundle/vim-gitgutter
     url = https://github.com/airblade/vim-gitgutter.git
 [submodule ".vim/bundle/vim-hybrid"]
     path = .vim/bundle/vim-hybrid
