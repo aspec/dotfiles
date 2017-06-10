@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/ctrlp.vim"]
     path = .vim/bundle/ctrlp.vim
     url = https://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/jshint"]
-    path = .vim/bundle/jshint
-    url = https://github.com/Shutnik/jshint.git
 [submodule ".vim/bundle/nerdtree"]
     path = .vim/bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
