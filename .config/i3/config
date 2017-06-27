@@ -29,9 +29,6 @@ font pango:DejaVu Sans Mono 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# No title bar
-new_window 1pixel
-
 # start a terminal
 bindsym $mod+Return exec termite
 
@@ -58,10 +55,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-#bindsym $mod+backslash split h
+bindsym $mod+backslash split h
 
 # split in vertical orientation
-#bindsym $mod+minus split v
+bindsym $mod+minus split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -72,7 +69,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+space floating toggle
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -81,50 +81,50 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # set workplace window icons
-set $workspace1 "1:  "
-set $workspace2 "2:  "
-set $workspace3 "3:  "
-set $workspace4 "4:  "
-set $workspace5 5
-set $workspace6 6
-set $workspace7 "7:  "
-set $workspace8 "8:  "
-set $workspace9 "9:  "
-set $workspace0 "0:  "
+set $ws1 "1:  "
+set $ws2 "2:  "
+set $ws3 "3:  "
+set $ws4 "4:  "
+set $ws5 "5:  "
+set $ws6 "6:  "
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws0 "0:  "
 
 # switch to workspace
-bindsym $mod+1 workspace $workspace1
-bindsym $mod+2 workspace $workspace2
-bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace $workspace5
-bindsym $mod+6 workspace $workspace6
-bindsym $mod+7 workspace $workspace7
-bindsym $mod+8 workspace $workspace8
-bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 workspace $workspace0
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws0
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace0
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws0
+
 
 # workspace assignments
-# assign [class="^chromium"]                      $workspace1
-# assign [class="^Firefox"]                       $workspace2
-# assign [class="^Thunderbird"]                   $workplace3
-# assign [class="^Nautilus"]                      $workspace4
-# assign [class="^calibre"]                       $workspace7
-# assign [class="^gimp"]                          $workspace8
-# assign [class="^gvim"]                          $workspace9
-# assign [class="^termite" instance="^tmux"]      $workspace0
+assign [class="^Firefox"]                       $ws1
+assign [class="^chromium"]                      $ws2
+assign [class="^Thunderbird"]                   $ws3
+assign [class="^Nautilus"]                      $ws4
+assign [class="^gimp"]                          $ws5
+assign [class="^calibre"]                       $ws6
+assign [class="^termite"]                       $ws0
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -139,16 +139,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -164,12 +164,16 @@ bar {
         tray_output LVDS-1
         status_command i3blocks
         workspace_buttons yes
-        position top
+#        position top
 }
 
 bar {
         output VGA-1
+        tray_output none
         position top
+        mode hide
+        hidden_state hide
+        modifier Mod2
 }
 
 # Pulse Audio controls
@@ -178,13 +182,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% # 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # GUI
-hide_edge_borders both
+#hide_edge_borders both
 
 # Workspace screens
-# workspace $workspace1 output LVDS-1
-# workspace $workspace0 output VGA-1
+workspace $ws1 output LVDS-1
+workspace $ws0 output VGA-1
 
 # Initial applications
 exec "nm-applet"
-exec "ibus-daemon -r"
-# exec --no-startup-id i3-msg 'workspace $workspace0; exec termite; workspace $workspace1'
+exec "setxkbmap -model thinkpad -layout us,ru -variant altgr-intl, -option 'grp:menu_toggle'"
+exec --no-startup-id i3-msg 'workspace $ws0 output VGA-1; exec termite; workspace $ws1'
