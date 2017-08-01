@@ -1,10 +1,10 @@
-full_text=
-align=center
-color=#FFFFFF
-separator=false
-separator_block_width=8
+# Global properties
+command=/usr/share/i3blocks/$BLOCK_NAME
+#align=right
+markup=none
+separator_block_width=15
 
-[Weather label]
+[weather label]
 full_text=
 separator=false
 color=#4088bf
@@ -12,9 +12,6 @@ color=#4088bf
 [weather]
 command=~/.i3/scripts/weather.sh "68502"
 interval=60
-separator=false
-
-[separator]
 
 [language_text]
 full_text=
@@ -26,28 +23,65 @@ command=xkblayout-state print %s | awk '{print toupper($0)}'
 interval=1
 signal=1
 
-[separator]
-
 [volume_text]
 full_text=
 separator=false
 color=#4088bf
 
 [volume]
-command=/usr/share/i3blocks/volume
 instance=Master
 interval=1
 signal=10
 
-[separator]
-
-[battery]
-command=~/.i3/i3blocks-contrib/battery/battery
-markup=pango
+[memory_text]
+full_text=
+separator=false
 color=#4088bf
+
+[memory]
+interval=30
+separator=false
+
+[memory]
+instance=swap
 interval=30
 
-[separator]
+[wifi_text]
+full_text=
+separator=false
+color=#4088bf
+
+[wifi]
+instance=wlan0
+interval=1
+separator=false
+
+[bandwidth]
+instance=wlan0
+interval=1
+
+[load_average_text]
+full_text=
+separator=false
+color=#4088bf
+
+[load_average]
+instance=Master
+interval=10
+signal=90
+#separator=false
+
+[cpu_usage]
+interval=10
+signal=90
+
+[battery_text]
+full_text=
+color=#4088bf
+separator=false
+
+[battery]
+interval=30
 
 [date_text]
 full_text=
@@ -57,17 +91,12 @@ separator=false
 [date]
 command=date '+%d-%m-%Y'
 interval=360
-separator=false
-
-[separator]
 
 [time_text]
 full_text=
 color=#4088bf
+separator=false
 
 [time]
 command=date '+%H:%M:%S' # | sed 's/:/h/'
 interval=1
-separator=false
-
-[separator]

@@ -1,4 +1,4 @@
-" Startup {{{
+" Initialize {{{
 set nocompatible
 execute pathogen#infect()
 filetype plugin indent on

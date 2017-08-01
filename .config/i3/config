@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -164,17 +164,18 @@ bar {
         tray_output LVDS-1
         status_command i3blocks
         workspace_buttons yes
-#        position top
 }
 
 bar {
         output VGA-1
         tray_output none
-        position top
         mode hide
         hidden_state hide
         modifier Mod2
 }
+
+# i3lock
+bindsym $mod+Shift+x exec i3lock
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% # increase sound volume
@@ -187,6 +188,9 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # Workspace screens
 workspace $ws1 output LVDS-1
 workspace $ws0 output VGA-1
+
+# Move the current workspace to the next output
+bindsym $mod+Shift+m move workspace to output left
 
 # Initial applications
 exec "nm-applet"
