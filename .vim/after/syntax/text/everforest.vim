@@ -6,5 +6,5 @@ if index(g:everforest_loaded_file_types, 'text') ==# -1
 else
     finish
 endif
-let g:everforest_last_modified = 'Sun Jan  5 10:42:39 UTC 2025'
+let g:everforest_last_modified = 'Sat Feb  8 10:11:37 UTC 2025'
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
