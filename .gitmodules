@@ -1,0 +1,12 @@
+[submodule ".vim/pack/colors/opt/everforest.vim"]
+    path = .vim/pack/colors/opt/everforest.vim
+    url = https://github.com/sainnhe/everforest.git
+[submodule ".vim/pack/plugins/start/vim-polyglot.git"]
+    path = .vim/pack/plugins/start/vim-polyglot.git
+    url = https://github.com/sheerun/vim-polyglot.git
+[submodule ".vim/autoload/airline/vim-airline.git"]
+    path = .vim/autoload/airline/vim-airline.git
+    url = https://github.com/vim-airline/vim-airline.git
+[submodule ".vim/pack/vendor/start/nerdtree.git"]
+    path = .vim/pack/vendor/start/nerdtree.git
+    url = https://github.com/preservim/nerdtree.git
