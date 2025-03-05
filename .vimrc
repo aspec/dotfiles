@@ -143,10 +143,10 @@ match ExtraWhitespace /\s\+$/
 " }}}
 
 " Visualize 80th column {{{
-if (exists('+colorcolumn'))
-    set colorcolumn=80
-    highlight ColorColumn ctermbg=9
-endif
+" if (exists('+colorcolumn'))
+"     set colorcolumn=80
+"     highlight ColorColumn ctermbg=9
+" endif
 " }}}
 
 " }}}
