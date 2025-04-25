@@ -9,3 +9,4 @@ This repo contains configuration files for the following:
     * NERDTree
     * vim-polyglot
     * vim-everforest
+    * vim-fugitive
