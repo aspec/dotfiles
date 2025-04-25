@@ -44,7 +44,6 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 map <C-space> ?
 let mapleader=','
-set backspace=eol,start,indent
 set whichwrap+=<,>
 " }}}
 
@@ -143,6 +142,7 @@ endfun
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 " }}}
+"
 " }}}
 
 " }}}
