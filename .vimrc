@@ -64,7 +64,7 @@ set relativenumber
 set t_Co=256
 set novisualbell
 set noerrorbells
-set gfn=InconsolotaNFM-Regular:h18
+set guifont=Inconsolata\ Nerd\ Font\ Mono:h18
 " }}}
 
 " Colorscheme {{{
