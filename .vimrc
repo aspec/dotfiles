@@ -1,3 +1,6 @@
+" Vim configuration settings for aspec
+" Last updated 3 July 2025
+
 " Initialize {{{
 set nocompatible
 filetype plugin indent on
