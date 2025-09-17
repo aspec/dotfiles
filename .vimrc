@@ -1,4 +1,4 @@
-" Vim configuration settings for aspec
+" Vim configuration settings for @aspec on Github
 " Last updated 3 July 2025
 
 " Initialize {{{
@@ -67,7 +67,7 @@ set relativenumber
 set t_Co=256
 set novisualbell
 set noerrorbells
-set guifont=Inconsolata\ Nerd\ Font\ Mono:h18
+set guifont=Inconsolata\ Nerd\ Font\ Mono:h13
 " }}}
 
 " Colorscheme {{{
