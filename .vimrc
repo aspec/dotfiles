@@ -90,7 +90,7 @@ colorscheme everforest
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'everforest'
 let g:airline#extensions#nerdtree_statusline = 1
-let g:airline_extensions = ['branch', 'keymap', 'netrw', 'po', 'quickfix', 'searchcount', 'tabline', 'term', 'whitespace', 'wordcount']
+let g:airline_extensions = ['branch', 'keymap', 'po', 'quickfix', 'searchcount', 'tabline', 'term', 'whitespace', 'wordcount']
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
