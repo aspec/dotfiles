@@ -43,8 +43,6 @@ au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 " }}}
 
 " Keymappings {{{
-nnoremap n nzzzv
-nnoremap N Nzzzv
 map <C-space> ?
 let mapleader=','
 set whichwrap+=<,>
