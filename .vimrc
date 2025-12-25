@@ -40,12 +40,14 @@ set wrap
 " Language settings {{{
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+" au FileType html setlocal expandtab tabstop=2 shiftwidth=4 softtabstop=0
 " }}}
 
 " Keymappings {{{
 map <C-space> ?
 let mapleader=','
 set whichwrap+=<,>
+set mouse=a
 " }}}
 
 " Search {{{
