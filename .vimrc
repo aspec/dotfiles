@@ -20,9 +20,9 @@ set backspace=indent,eol,start
 
 " Tabs {{{
 set history=1000
-set tabstop=4
-set softtabstop=0
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
 " }}}
@@ -40,7 +40,6 @@ set wrap
 " Language settings {{{
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
-" au FileType html setlocal expandtab tabstop=2 shiftwidth=4 softtabstop=0
 " }}}
 
 " Keymappings {{{
@@ -67,7 +66,7 @@ set relativenumber
 set t_Co=256
 set novisualbell
 set noerrorbells
-set guifont=Inconsolata\ Nerd\ Font\ Mono:h17
+set guifont=Inconsolata\ Nerd\ Font\ Mono:h18
 " }}}
 
 " Colorscheme {{{
@@ -80,6 +79,8 @@ endif
 let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
 let g:everforest_diagnostic_text_highlight = 1
+let g:everforest_enable_italic = 1
+
 
 colorscheme everforest
 " }}}
@@ -128,6 +129,14 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+" }}}
+
+" tmux {{{
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 " }}}
 
 " Functions {{{
