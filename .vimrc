@@ -1,5 +1,5 @@
 " Vim configuration settings for @aspec on Github
-" Last updated 9 Nov 2025
+" Last updated 3 January 2026
 
 " Initialize {{{
 set nocompatible
@@ -43,10 +43,11 @@ au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 " }}}
 
 " Keymappings {{{
+nnoremap n nzzzv
+nnoremap N Nzzzv
 map <C-space> ?
 let mapleader=','
 set whichwrap+=<,>
-set mouse=a
 " }}}
 
 " Search {{{
@@ -66,7 +67,7 @@ set relativenumber
 set t_Co=256
 set novisualbell
 set noerrorbells
-set guifont=Inconsolata\ Nerd\ Font\ Mono:h18
+set guifont=Inconsolata\ Nerd\ Font\ Mono:h13
 " }}}
 
 " Colorscheme {{{
@@ -76,19 +77,9 @@ else
     set background=dark
 endif
 
-" tmux
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-"
-
 let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
 let g:everforest_diagnostic_text_highlight = 1
-let g:everforest_enable_italic = 1
-
 
 colorscheme everforest
 " }}}
@@ -136,7 +127,6 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
 " }}}
 
 " Functions {{{
