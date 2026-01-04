@@ -1,5 +1,5 @@
 " Vim configuration settings for @aspec on Github
-" Last updated 3 January 2026
+" Last updated 4 January 2026
 
 " Initialize {{{
 set nocompatible
@@ -67,7 +67,7 @@ set relativenumber
 set t_Co=256
 set novisualbell
 set noerrorbells
-set guifont=Inconsolata\ Nerd\ Font\ Mono:h13
+set guifont=InconsolataNFM-Regular:h18
 " }}}
 
 " Colorscheme {{{
@@ -80,6 +80,7 @@ endif
 let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
 let g:everforest_diagnostic_text_highlight = 1
+let g:everforest_enable_italic = 1
 
 colorscheme everforest
 " }}}
