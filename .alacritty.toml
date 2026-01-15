@@ -38,14 +38,28 @@ bright_foreground = "0xFFFCF0"
 dim_foreground = "0xFFFCF0"
 foreground = "0xFFFCF0"
 
+[colors]
+draw_bold_text_with_bright_colors = true
+
 [window]
-opacity = 0.9
 decorations = "None"
 decorations_theme_variant = "Dark"
+dynamic_padding = true
+resize_increments = true
+option_as_alt = "Both"
+
+[font.normal]
+family = "Inconsolata Nerd Font Mono"
+style = "Regular"
 
 [font]
-normal = { family = "Inconsolata Nerd Font Mono", style = "Regular" }
-bold = { family = "Inconsolata Nerd Font Mono", style = "Bold" }
-italic = { family = "Inconsolata Nerd Font Mono", style = "Italic" }
-bold_italic = { family = "Inconsolata Nerd Font Mono", style = "Bold Italic" }
-size = 14
+size = 13
+
+[selection]
+save_to_clipboard = true
+
+[terminal]
+shell.program = "/bin/zsh"
+
+[env]
+TERM = "xterm-256color"
