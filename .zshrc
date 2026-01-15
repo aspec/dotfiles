@@ -31,3 +31,7 @@ fi
 #     alias fgrep='fgrep --color=auto'
 #     alias egrep='egrep --color=auto'
 # fi
+
+# Plugins
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
