@@ -53,7 +53,7 @@ family = "Inconsolata Nerd Font Mono"
 style = "Regular"
 
 [font]
-size = 13
+size = 15
 
 [selection]
 save_to_clipboard = true
