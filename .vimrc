@@ -1,5 +1,6 @@
 " Vim configuration settings for @aspec on Github
-" Last updated 4 January 2026
+" ThinkPad T480 (debian trixie)
+" Last updated 18 January 2026
 
 " Initialize {{{
 set nocompatible
@@ -67,7 +68,6 @@ set relativenumber
 set t_Co=256
 set novisualbell
 set noerrorbells
-set guifont=InconsolataNFM-Regular:h18
 set gfn=Inconsolata\ Nerd\ Font\ Mono\ 15
 " }}}
 
