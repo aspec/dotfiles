@@ -23,23 +23,8 @@ fi
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    alias ll='ls -la -color=auto'
-    alias la='ls -la -color=auto'
+    alias ll='ls -la --color=auto'
+    alias la='ls -la --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
-
-<<<<<<< HEAD
-#     alias grep='grep --color=auto'
-#     alias fgrep='fgrep --color=auto'
-#     alias egrep='egrep --color=auto'
-# fi
-
-# Plugins
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-=======
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
->>>>>>> parent of 438d5e3 (Changes to be committed:)

@@ -68,6 +68,7 @@ set t_Co=256
 set novisualbell
 set noerrorbells
 set guifont=InconsolataNFM-Regular:h18
+set gfn=Inconsolata\ Nerd\ Font\ Mono\ 15
 " }}}
 
 " Colorscheme {{{
