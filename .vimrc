@@ -46,7 +46,7 @@ au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 nnoremap n nzzzv
 nnoremap N Nzzzv
 map <C-space> ?
-set mapleader='<,>'
+let mapleader=','
 set whichwrap+=<,>
 " }}}
 
