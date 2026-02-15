@@ -1,5 +1,5 @@
 " Vim configuration settings for @aspec on Github
-" Last updated 4 January 2026
+" Last updated 28 January 2026
 
 " Initialize {{{
 set nocompatible
@@ -46,7 +46,7 @@ au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 nnoremap n nzzzv
 nnoremap N Nzzzv
 map <C-space> ?
-let mapleader=','
+set mapleader='<,>'
 set whichwrap+=<,>
 " }}}
 
