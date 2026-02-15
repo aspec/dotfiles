@@ -40,6 +40,7 @@ set wrap
 " }}}
 
 " Language settings {{{
+au FileType html setlocal tabstop=2 shiftwidth=2 expandtab
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 " }}}
