@@ -1,5 +1,5 @@
 " Vim configuration settings for @aspec on Github
-" Last updated 28 January 2026
+" Last updated 14 February 2026
 
 " Initialize {{{
 set nocompatible
@@ -7,6 +7,8 @@ filetype plugin indent on
 syntax on
 syntax enable
 set nobackup
+set mouse=a
+set mousemodel=popup
 " }}}
 
 " Formatting {{{
