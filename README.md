@@ -13,4 +13,4 @@ This repo contains configuration files for the following programs:
 
 ### Are these good?
 
-Doubtful! I can give you a peek at what this setup looks like on my terminal, however:
+Doubtful!
