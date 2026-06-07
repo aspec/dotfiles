@@ -28,3 +28,4 @@ if [ -x /usr/bin/dircolors ]; then
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 fi
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
