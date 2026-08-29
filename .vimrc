@@ -1,5 +1,4 @@
-" Vim configuration settings for @aspec on Github
-" Last updated 14 February 2026
+" Last updated 29 August 2026
 
 " Initialize {{{
 set nocompatible
@@ -18,13 +17,14 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
 set backspace=indent,eol,start
+set ttyfast
 " }}}
 
 " Tabs {{{
 set history=1000
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=0
+set shiftwidth=4
 set expandtab
 set smarttab
 " }}}
@@ -45,11 +45,6 @@ au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 " }}}
 
 " Keymappings {{{
-nnoremap n nzzzv
-nnoremap N Nzzzv
-map <C-space> ?
-let mapleader=','
-set whichwrap+=<,>
 " }}}
 
 " Search {{{
