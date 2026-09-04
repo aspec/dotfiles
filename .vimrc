@@ -1,4 +1,4 @@
-" Last updated 2 September 2026
+" Last updated 4 September 2026
 
 " Initialize {{{
 set nocompatible
@@ -59,6 +59,7 @@ set relativenumber
 set t_Co=256
 set novisualbell
 set noerrorbells
+set colorcolumn=80
 set guifont=InconsolataNFM-Regular:h18
 " }}}
 
