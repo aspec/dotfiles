@@ -1,7 +1,14 @@
 # Plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+#source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# Command completion
+autoload -Uz compinit
+compinit
+
+# Vi keys mode
+bindkey -v
 
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
@@ -9,6 +16,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Make color constants available
 autoload -U colors
 colors
+
+# Prompt themes
+#autoload -Uz promptinit
+#promptinit
 
 # Modify the prompt to contain git branch name
 # git_prompt_info() {

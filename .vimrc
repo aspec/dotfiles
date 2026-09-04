@@ -1,4 +1,4 @@
-" Last updated 29 August 2026
+" Last updated 2 September 2026
 
 " Initialize {{{
 set nocompatible
@@ -37,11 +37,6 @@ set smartindent
 set wrap
 " }}}
 
-" }}}
-
-" Language settings {{{
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
-au FileType sh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 " }}}
 
 " Keymappings {{{
