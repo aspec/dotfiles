@@ -1,4 +1,5 @@
-" Last updated 4 September 2026
+" Vim config file of aspec (https://github.com/aspec)
+" Last updated 5 September 2026
 
 " Initialize {{{
 set nocompatible
@@ -6,8 +7,14 @@ filetype plugin indent on
 syntax on
 syntax enable
 set nobackup
+set noswapfile
 set mouse=a
 set mousemodel=popup
+set autoread
+set history=1000
+set tabpagemax=50
+set sessionoptions-=options
+set viewoptions-=options
 " }}}
 
 " Formatting {{{
@@ -35,11 +42,16 @@ set tw=500
 set autoindent
 set smartindent
 set wrap
+set laststatus=2
+set scrolloff=1
+set sidescroll=1
+set sidescrolloff=2
 " }}}
 
 " }}}
 
 " Keymappings {{{
+set nolangremap
 " }}}
 
 " Search {{{
@@ -47,6 +59,7 @@ set incsearch
 set ignorecase
 set smartcase
 set showmatch
+set wildmenu
 " }}}
 
 " Packages {{{
@@ -55,6 +68,7 @@ packadd! everforest
 
 " UI {{{
 set number
+set ruler
 set relativenumber
 set t_Co=256
 set novisualbell
